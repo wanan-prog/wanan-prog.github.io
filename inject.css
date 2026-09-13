@@ -89,8 +89,8 @@
 /* 卡片滚动弹出动画 */
 .recent-post-item, .card-widget {
   opacity: 0;
-  transform: scale(0.85) translateY(20px);
-  transition: all 0.6s ease-out;
+  transform: scale(0.75) translateY(60px);
+  transition: all 0.8s cubic-bezier(0.22, 1, 0.36, 1);
 }
 .recent-post-item.card-animated, .card-widget.card-animated {
   opacity: 1;
