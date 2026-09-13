@@ -20,3 +20,22 @@
   background: rgba(255, 255, 255, 0.7) !important;
   backdrop-filter: blur(10px);
 }
+/* 卡片改深色 */
+.recent-post-item,
+.card-widget,
+#article-container,
+.pagination {
+  background: rgba(20, 20, 20, 0.85) !important;
+  color: #eee !important;
+}
+.recent-post-item .article-title,
+.card-widget .author-info-name {
+  color: #fff !important;
+}
+.recent-post-item .content,
+.card-widget .item-headline,
+.article-meta-wrap,
+#aside-content a,
+#aside-content .item-headline span {
+  color: #ccc !important;
+}
