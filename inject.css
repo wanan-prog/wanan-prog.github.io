@@ -1,3 +1,7 @@
+/* 背景图压暗 */
+#web_bg {
+  filter: brightness(0.6) !important;
+}
 /* banner 透明，露出 body 背景图 */
 #page-header {
   background: transparent !important;
