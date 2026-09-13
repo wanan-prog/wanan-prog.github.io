@@ -20,22 +20,18 @@
   background: rgba(255, 255, 255, 0.7) !important;
   backdrop-filter: blur(10px);
 }
-/* 卡片改深色 */
+/* 卡片改深色：只改首页文章卡片和侧边栏 */
 .recent-post-item,
-.card-widget,
-#article-container,
-.pagination {
+.card-widget {
   background: rgba(20, 20, 20, 0.85) !important;
-  color: #eee !important;
 }
-.recent-post-item .article-title,
-.card-widget .author-info-name {
+.recent-post-item .article-title {
   color: #fff !important;
 }
 .recent-post-item .content,
+.recent-post-item .article-meta-wrap,
+.card-widget .author-info-name,
 .card-widget .item-headline,
-.article-meta-wrap,
-#aside-content a,
-#aside-content .item-headline span {
-  color: #ccc !important;
+.card-widget a {
+  color: #ddd !important;
 }
