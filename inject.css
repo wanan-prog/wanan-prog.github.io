@@ -1,0 +1,18 @@
+/* banner 透明，露出 body 背景图 */
+#page-header {
+  background: transparent !important;
+}
+#page-header:before,
+#page-header:after {
+  background: none !important;
+}
+/* 导航栏透明，毛玻璃 */
+#nav {
+  background: transparent !important;
+  box-shadow: none !important;
+}
+/* 向下滚动后导航栏加一点半透明底色 */
+#nav.fixed {
+  background: rgba(255, 255, 255, 0.7) !important;
+  backdrop-filter: blur(10px);
+}
