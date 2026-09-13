@@ -32,6 +32,9 @@
 .recent-post-item .article-meta-wrap,
 .card-widget .author-info-name,
 .card-widget .item-headline,
-.card-widget a {
-  color: #ddd !important;
+.card-widget a,
+.card-widget .item-headline span,
+.card-widget .webinfo-item,
+.card-widget .author-info-description {
+  color: #fff !important;
 }
