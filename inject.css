@@ -87,6 +87,20 @@
   100% { transform: rotate(360deg); }
 }
 
+/* 底部 footer 透明，让背景图贯穿到底 */
+#footer {
+  background: transparent !important;
+}
+#footer:before {
+  background: none !important;
+}
+#footer,
+#footer a,
+#footer .copyright,
+#footer .framework-info {
+  color: #fff !important;
+}
+
 /* 卡片滚动弹出动画 */
 .recent-post-item, .card-widget {
   opacity: 0;
