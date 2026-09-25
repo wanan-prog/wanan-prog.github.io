@@ -1,0 +1,98 @@
+/* 背景图压暗 */
+#web_bg {
+  filter: brightness(0.6) !important;
+}
+/* banner 透明，露出 body 背景图 */
+#page-header {
+  background: transparent !important;
+}
+#page-header:before,
+#page-header:after {
+  background: none !important;
+}
+/* 导航栏透明，毛玻璃 */
+#nav {
+  background: transparent !important;
+  box-shadow: none !important;
+}
+/* 向下滚动后导航栏加一点半透明底色 */
+#nav.fixed {
+  background: rgba(255, 255, 255, 0.7) !important;
+  backdrop-filter: blur(10px);
+}
+/* 卡片改深色：只改首页文章卡片和侧边栏 */
+.recent-post-item,
+.card-widget {
+  background: rgba(20, 20, 20, 0.85) !important;
+}
+.recent-post-item .article-title {
+  color: #fff !important;
+}
+.recent-post-item .content,
+.recent-post-item .article-meta-wrap,
+.card-widget .author-info-name,
+.card-widget .item-headline,
+.card-widget a,
+.card-widget .item-headline span,
+.card-widget .webinfo-item,
+.card-widget .author-info-description {
+  color: #fff !important;
+}
+/* pace 加载进度条：橙红暖色 */
+.pace {
+  -webkit-pointer-events: none;
+  pointer-events: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+.pace .pace-progress {
+  background: linear-gradient(90deg, #ff6b35, #ffcc00);
+  position: fixed;
+  z-index: 2000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  box-shadow: 0 0 8px #ff6b35;
+}
+.pace .pace-progress:after {
+  content: attr(data-progress-text);
+  display: block;
+  position: fixed;
+  top: 6px;
+  right: 8px;
+  color: #ffcc00;
+  font-size: 12px;
+  font-weight: bold;
+}
+.pace.pace-inactive {
+  display: none;
+}
+.pace-activity {
+  position: fixed;
+  top: 12px;
+  right: 12px;
+  z-index: 2000;
+  border-radius: 50%;
+  width: 14px;
+  height: 14px;
+  border: solid 2px #ff6b35;
+  border-top-color: transparent;
+  animation: pace-spinner 400ms linear infinite;
+}
+@keyframes pace-spinner {
+  0% { transform: rotate(0); }
+  100% { transform: rotate(360deg); }
+}
+
+/* 卡片滚动弹出动画 */
+.recent-post-item, .card-widget {
+  opacity: 0;
+  transform: scale(0.75) translateY(60px);
+  transition: all 1.2s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.recent-post-item.card-animated, .card-widget.card-animated {
+  opacity: 1;
+  transform: scale(1) translateY(0);
+}
