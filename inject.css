@@ -35,7 +35,8 @@
 .card-widget a,
 .card-widget .item-headline span,
 .card-widget .webinfo-item,
-.card-widget .author-info-description {
+.card-widget .author-info-description,
+.card-announcement .announcement_content {
   color: #fff !important;
 }
 /* pace 加载进度条：橙红暖色 */
